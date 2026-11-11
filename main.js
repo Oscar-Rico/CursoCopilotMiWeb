@@ -7,7 +7,7 @@ if (menuToggle && primaryNav) {
     menuToggle.setAttribute("aria-expanded", String(!isOpen));
     menuToggle.setAttribute("aria-label", isOpen ? "Abrir menú" : "Cerrar menú");
     primaryNav.classList.toggle("is-open", !isOpen);
-  });
+  }); 
 
   primaryNav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
